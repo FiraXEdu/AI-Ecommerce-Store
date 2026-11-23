@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: documentdb
+spec:
+  ports:
+    - port: 10260
+  selector:
+    app: documentdb
+  type: ClusterIP
